@@ -1,0 +1,23 @@
+{
+  "name": "Fantom Balloon #0",
+  "description": "Fantom Chess OG collection",
+  "image": "https://bad-ballons.vercel.app/img/badballon5.png",
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "yellow"
+    },
+    {
+      "trait_type": "piece",
+      "value": "Rook"
+    },
+    {
+      "trait_type": "Color",
+      "value": "W"
+    },
+    {
+      "trait_type": "Art type",
+      "value": "1"
+    }
+  ]
+}
