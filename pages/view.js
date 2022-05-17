@@ -1,8 +1,5 @@
 import React, { useState, useEffect, Fragment } from "react";
 let Web3 = require("web3");
-import Image from 'next/image'
-import Swal from 'sweetalert2'
-import axios from "axios";
 import abiObj from '../src/utils/abi'
 
 function Index() {
@@ -79,7 +76,7 @@ function Index() {
         <a className="tittle colorGradient" href='/'>Bad Balloons</a>
 
         <div className='menus'>
-          <div>You own ({balance}) games</div>
+          <div>You own ({balance}) balloons</div>
         </div>
 
         <button className='button' onClick={connectWallet}>
@@ -96,12 +93,12 @@ function Index() {
 
             {games.map(game => {
               return (
-                <div style={{ padding: 20, width: 300 }}>
+                <div key={game.id} style={{ padding: 20, width: 300 }}>
                   Bad Balloon #{game.id}
                   <br></br>
                   <img width='200' height='200' src={videoAddress + game.id + '.png'} />
-                  
 
+                  <a style={{marginLeft: 'auto', marginRight: 'auto', marginTop: 10}} rel='noreferrer' target='_blank' className='button' href={'https://testnets.opensea.io/assets/0x292c25415dac88bfd9a0017270357e9d42b7deb7/' + game.id}>Visualizar</a>
                 </div>
               )
             })}

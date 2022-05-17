@@ -163,7 +163,7 @@ function Index () {
           <div className='content-container'>
             <div style={{ margin: 20 }}>
               <div style={{ flex: 1 }} className='image-frame' style={{height: 300}}>
-                <img src='/img/badballon1.png' alt='discord' width='300' height='300' />
+                <img src='/img/1.png' alt='discord' width='300' height='300' />
               </div>
             </div>
 
