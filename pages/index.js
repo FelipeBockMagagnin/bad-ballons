@@ -16,7 +16,9 @@ function Index () {
   const [isReady, setIsReady] = useState(false)
 
   const abi = abiObj
-  const contractAddress = '0x846a150274e252392c4b6dabe19c6d28d8ca7865'
+  const contractAddress = '0x292c25415dac88bfd9a0017270357e9d42b7deb7'
+  const txViewAddr = 'https://rinkeby.etherscan.io/tx/'
+  const price = '0.05';
 
   useEffect(() => {
     connectWallet()
@@ -54,7 +56,7 @@ function Index () {
             setContract(null)
             Swal.fire({
               title: 'Error!',
-              html: 'Check if you are using the Fantom Network',
+              html: 'Check if you are using the Ethereum Network',
               icon: 'error',
               confirmButtonText: 'Ok'
             })
@@ -81,7 +83,7 @@ function Index () {
         setIsReady(false)
         Swal.fire({
           title: 'Error!',
-          html: 'Check if you are using the Fantom Network',
+          html: 'Check if you are using the Ethereum Network',
           icon: 'error',
           confirmButtonText: 'Ok'
         })
@@ -120,7 +122,7 @@ function Index () {
 
   function claim () {
     setIsClaiming(true)
-    const _price = web3.utils.toWei('20')
+    const _price = web3.utils.toWei(price)
 
     contract.methods
       .claim()
@@ -139,11 +141,11 @@ function Index () {
         setIsClaiming(false)
         loadData()
 
-        const link = 'https://ftmscan.com/tx/' + receipt.transactionHash
+        const link = txViewAddr + receipt.transactionHash
 
         Swal.fire({
           title: 'Success!',
-          html: 'You can check the transaction at <a href="' + link + '" target="_blank" style="color: blue">Ftmscan</a>',
+          html: 'You can check the transaction at <a href="' + link + '" target="_blank" style="color: blue">Etherscan</a>',
           icon: 'success',
           confirmButtonText: 'Cool'
         })
@@ -170,12 +172,11 @@ function Index () {
               <br />
               <br />
 
-              Bad Balloons is a collection of <div className='colorGradient'>????</div> random generated Ballons stored on the <div className='colorGradient'>Ethereum</div> Blockchain.
+              Bad Balloons is a collection of <div className='colorGradient'>{maxMintable}</div> random generated Ballons stored on the <div className='colorGradient'>Ethereum</div> Blockchain.
               <br />
               <br />
 
-
-              Price: <div className='colorGradient'>0.?? ETH</div> each
+              Price: <div className='colorGradient'>{price} ETH</div> each
 
               <br />
               <br />
@@ -188,7 +189,11 @@ function Index () {
                 <Image src='/assets/twitter.svg' alt='twitter' width='20' height='20' />
               </a>
 
-              <a href='https://ftmscan.com/address/0x846a150274e252392c4b6dabe19c6d28d8ca7865' className='mr-10' target='_blank' rel="noreferrer">
+              <a href='https://rinkeby.etherscan.io/address/0xaaf7cc2a92c8d60ccf73e6cef503fdcd69917431' className='mr-10' target='_blank' rel="noreferrer">
+                <Image src='/assets/fantom.svg' alt='ftmscan' width='20' height='20' />
+              </a>
+
+              <a href='https://rinkeby.etherscan.io/address/0xaaf7cc2a92c8d60ccf73e6cef503fdcd69917431' className='mr-10' target='_blank' rel="noreferrer">
                 <Image src='/assets/fantom.svg' alt='ftmscan' width='20' height='20' />
               </a>
             </div>
@@ -196,12 +201,12 @@ function Index () {
 
           <br />
 
-          {isReady && <div> Minted ????/???? </div>}
+          {isReady && <div> Minted { supply + '/' + maxMintable } </div>}
 
           {!isReady && <div className='colorGradient'><br></br>Connect your wallet to claim</div>}
 
           {isReady && supply < 111 && <button className='button' style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: 20, width: 300 }} onClick={handleClaim}>
-            {isClaiming ? 'loading...' : 'Mint (0.?? ETH)'}
+            {isClaiming ? 'loading...' : 'Mint (' + price + ' ETH)'}
           </button>}
 
         </div>
