@@ -10,6 +10,7 @@ body {
     sans-serif;
   width: 100vw;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 a {
@@ -21,6 +22,29 @@ a {
   box-sizing: border-box;
 }
 
+.scrolling-image-container {
+  overflow: hidden;
+}
+
+.scrolling-image {
+  background: url("https://previews.123rf.com/images/jamie_cross/jamie_cross1308/jamie_cross130800004/21954794-las-nubes-se-repiten-sin-costura-y-el-cielo-azul-de-patr%C3%B3n-de-fondo.jpg") repeat-x;
+  height: 100%;
+  width: 7680px;
+  animation: slide 100s linear infinite;
+  position: absolute;
+  z-index: -100;
+  overflow-x: hidden;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-3840px); /* The image width */
+  }
+}
+
 #app {
   width: 100vw;
   display: flex;
@@ -28,10 +52,7 @@ a {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-
-  background-size: 80px, cover;
   height: auto;
-  animation: gradient 30s ease infinite;
 }
 
 .form-container {
@@ -83,7 +104,6 @@ a {
 .header {
   z-index: 999999;
   display: flex;
-  background-color: white;
   justify-content: space-around;
   width: 100vw;
   padding: 10px;
@@ -120,7 +140,7 @@ a {
   align-items: center;
   justify-content: center;
   width: 100%;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 @keyframes button {

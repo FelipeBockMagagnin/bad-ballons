@@ -154,6 +154,10 @@ function Index () {
 
   return (
     <Fragment>
+      <div class="scrolling-image-container">
+        <div class="scrolling-image"></div>
+      </div>      
+
       <div className="geeks"></div>
 
       <Header wallet={connectWallet} isReady={isReady} address={address} />
@@ -161,11 +165,6 @@ function Index () {
       <div id="app">
         <div className="form-container">
           <div className='content-container'>
-            <div style={{ margin: 20 }}>
-              <div style={{ flex: 1 }} className='image-frame' style={{height: 300}}>
-                <img src='/img/1.png' alt='discord' width='300' height='300' />
-              </div>
-            </div>
 
             <div style={{ flex: 1, marginTop: 10 }}>
               <h2 className="colorGradient" >Bad Balloons</h2>
