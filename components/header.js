@@ -3,6 +3,10 @@ import React from 'react'
 export default function Header({ wallet, isReady, address, staticPage }) {
     return (
         <div className="header">
+            
+      <div class="scrolling-image-container">
+        <div class="scrolling-image"></div>
+      </div>  
             <a className="tittle colorGradient" href='/'>Bad Balloons</a>
 
             <div className='menus'>

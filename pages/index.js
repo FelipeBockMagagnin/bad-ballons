@@ -154,10 +154,6 @@ function Index () {
 
   return (
     <Fragment>
-      <div class="scrolling-image-container">
-        <div class="scrolling-image"></div>
-      </div>      
-
       <div className="geeks"></div>
 
       <Header wallet={connectWallet} isReady={isReady} address={address} />

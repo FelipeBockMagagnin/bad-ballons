@@ -22,28 +22,7 @@ a {
   box-sizing: border-box;
 }
 
-.scrolling-image-container {
-  overflow: hidden;
-}
 
-.scrolling-image {
-  background: url("https://previews.123rf.com/images/jamie_cross/jamie_cross1308/jamie_cross130800004/21954794-las-nubes-se-repiten-sin-costura-y-el-cielo-azul-de-patr%C3%B3n-de-fondo.jpg") repeat-x;
-  height: 100%;
-  width: 7680px;
-  animation: slide 100s linear infinite;
-  position: absolute;
-  z-index: -100;
-  overflow-x: hidden;
-}
-
-@keyframes slide {
-  0% {
-    transform: translate(0);
-  }
-  100% {
-    transform: translate(-3840px); /* The image width */
-  }
-}
 
 #app {
   width: 100vw;
@@ -320,11 +299,40 @@ ul li ul li a {
   }  
 }
 
+.scrolling-image-container {
+  overflow: hidden;
+}
+
+.scrolling-image {
+  background: url("https://previews.123rf.com/images/jamie_cross/jamie_cross1308/jamie_cross130800004/21954794-las-nubes-se-repiten-sin-costura-y-el-cielo-azul-de-patr%C3%B3n-de-fondo.jpg") repeat-x;
+  height: 110%;
+  width: 100vw;
+  animation: slide 100s linear infinite;
+  position: absolute;
+  z-index: -100;
+  overflow-x: hidden;
+  top: -20px;
+  left: 0;
+}
+
 @media (min-width: 601px) {
   #info-analyze {
     position: absolute;
     width: 30vw !important;
     left: 10px;
+  }
+
+  .scrolling-image {
+    width: 7680px;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(-3840px); /* The image width */
+    }
   }
   
 }
