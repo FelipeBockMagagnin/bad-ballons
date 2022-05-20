@@ -1,17 +1,16 @@
 import React from 'react'
+import Image from 'next/image'
 
 export default function Header({ wallet, isReady, address, staticPage }) {
     return (
         <div className="header">
-            
-      <div class="scrolling-image-container">
-        <div class="scrolling-image"></div>
-      </div>  
-            <a className="tittle colorGradient" href='/'>Bad Balloons</a>
+            <div className="scrolling-image-container">
+                <div className="scrolling-image"></div>
+            </div>
 
             <div className='menus'>
                 <div className="primary-navigation">
-                    <ul style={{padding: 0}}>
+                    <ul style={{ padding: 0 }}>
                         <li>
                             <a href="/view">View</a>
                         </li>
@@ -29,12 +28,29 @@ export default function Header({ wallet, isReady, address, staticPage }) {
                         </li>
                     </ul>
                 </div>
+            </div>
+        
+            <div>
+                <a href='https://discord.gg/cDh6gbn59A' className='mr-10' target='_blank' rel="noreferrer">
+                    <Image src='/assets/discord.svg' alt='discord' width='20' height='20' />
+                </a>
 
+                <a href='https://twitter.com/FantomChess' target='_blank' className='mr-10' rel="noreferrer">
+                    <Image src='/assets/twitter.svg' alt='twitter' width='20' height='20' />
+                </a>
+
+                <a href='https://rinkeby.etherscan.io/address/0xaaf7cc2a92c8d60ccf73e6cef503fdcd69917431' className='mr-10' target='_blank' rel="noreferrer">
+                    <Image src='/assets/fantom.svg' alt='ftmscan' width='20' height='20' />
+                </a>
+
+                <a href='https://rinkeby.etherscan.io/address/0xaaf7cc2a92c8d60ccf73e6cef503fdcd69917431' className='mr-10' target='_blank' rel="noreferrer">
+                    <Image src='/assets/fantom.svg' alt='ftmscan' width='20' height='20' />
+                </a>
             </div>
 
             {!staticPage && <button className='button' onClick={wallet}>
                 {isReady ? address?.substring(0, 6) + "..." + address?.substring(address.length - 4, address.length) : "Connect"} { }
-            </button> }
+            </button>}
         </div>
     )
 }
