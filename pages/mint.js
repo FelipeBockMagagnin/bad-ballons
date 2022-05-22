@@ -14,11 +14,12 @@ function Index () {
   const [supply, setSupply] = useState(0)
   const [isClaiming, setIsClaiming] = useState(false)
   const [isReady, setIsReady] = useState(false)
+  const [mintQuantity, setMintQuantity] = useState(0)
 
   const abi = abiObj
-  const contractAddress = '0x292c25415dac88bfd9a0017270357e9d42b7deb7'
+  const contractAddress = '0x5655244a33d6bc6a22704ee9a0f3bea836363faf'
   const txViewAddr = 'https://rinkeby.etherscan.io/tx/'
-  const price = '0.05';
+  const price = '0.03';
 
   useEffect(() => {
     connectWallet()
@@ -91,11 +92,6 @@ function Index () {
       })
   }
 
-  function handleClaim () {
-    const tx = claim()
-    console.log(tx)
-  }
-
   async function loadData () {
     const totalSupply = await contract.methods
       .totalSupply()
@@ -120,14 +116,47 @@ function Index () {
       .catch((err) => console.log(err))
   }
 
-  function claim () {
+
+  function mint_public() {
     setIsClaiming(true)
-    const _price = web3.utils.toWei(price)
+    const _price = web3.utils.toWei((price * mintQuantity).toFixed(2).toString())
 
     contract.methods
-      .claim()
+      .mint_public(mintQuantity)
       .send({
-        gasLimit: '285000',
+        gasLimit: (285000 * mintQuantity).toFixed(0).toString(),
+        to: contractAddress,
+        from: address,
+        value: _price
+      })
+      .on('error', (err, receipt) => {
+        console.log(err, receipt)
+        setIsClaiming(false)
+      })
+      .then((receipt) => {
+        console.log('receipt', receipt)
+        setIsClaiming(false)
+        loadData()
+
+        const link = txViewAddr + receipt.transactionHash
+
+        Swal.fire({
+          title: 'Success!',
+          html: 'You can check the transaction at <a href="' + link + '" target="_blank" style="color: blue">Etherscan</a>',
+          icon: 'success',
+          confirmButtonText: 'Cool'
+        })
+      })
+  }
+
+  function mint_whitelist () {
+    setIsClaiming(true)
+    const _price = web3.utils.toWei((price * mintQuantity).toFixed(2).toString())
+
+    contract.methods
+      .mint_whitelist(mintQuantity)
+      .send({
+        gasLimit:  (285000 * mintQuantity).toFixed(0).toString(),
         to: contractAddress,
         from: address,
         value: _price
@@ -163,11 +192,7 @@ function Index () {
           <div className='content-container'>
 
             <div style={{ flex: 1, marginTop: 10 }}>
-              <h2 className="colorGradient" >Bad Balloons</h2>
-              <br />
-              <br />
-
-              Bad Balloons is a collection of <div className='colorGradient'>{maxMintable}</div> random generated Ballons stored on the <div className='colorGradient'>Ethereum</div> Blockchain.
+              <h2 className="colorGradient" >Bad Balloons (TEST ONLY)</h2>
               <br />
               <br />
 
@@ -176,21 +201,7 @@ function Index () {
               <br />
               <br />
 
-              <a href='https://discord.gg/cDh6gbn59A' className='mr-10' target='_blank' rel="noreferrer">
-                <Image src='/assets/discord.svg' alt='discord' width='20' height='20' />
-              </a>
 
-              <a href='https://twitter.com/FantomChess' target='_blank' className='mr-10' rel="noreferrer">
-                <Image src='/assets/twitter.svg' alt='twitter' width='20' height='20' />
-              </a>
-
-              <a href='https://rinkeby.etherscan.io/address/0xaaf7cc2a92c8d60ccf73e6cef503fdcd69917431' className='mr-10' target='_blank' rel="noreferrer">
-                <Image src='/assets/fantom.svg' alt='ftmscan' width='20' height='20' />
-              </a>
-
-              <a href='https://rinkeby.etherscan.io/address/0xaaf7cc2a92c8d60ccf73e6cef503fdcd69917431' className='mr-10' target='_blank' rel="noreferrer">
-                <Image src='/assets/fantom.svg' alt='ftmscan' width='20' height='20' />
-              </a>
             </div>
           </div>
 
@@ -200,8 +211,21 @@ function Index () {
 
           {!isReady && <div className='colorGradient'><br></br>Connect your wallet to claim</div>}
 
-          {isReady && supply < 111 && <button className='button' style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: 20, width: 300 }} onClick={handleClaim}>
-            {isClaiming ? 'loading...' : 'Mint (' + price + ' ETH)'}
+
+          <br/>
+          <br/>
+
+          Mint Quantity
+          <br/>
+          <input type='number' value={mintQuantity} onChange={ e => setMintQuantity(e.target.value)} />
+    
+          {isReady && supply < 111 && <button className='button' style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: 20, width: 400 }} onClick={mint_public}>
+            {isClaiming ? 'loading...' : 'Public Mint'}
+          </button>}
+
+
+          {isReady && supply < 111 && <button className='button' style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: 20, width: 400 }} onClick={mint_whitelist}>
+            {isClaiming ? 'loading...' : 'Whitelist Mint'}
           </button>}
 
         </div>

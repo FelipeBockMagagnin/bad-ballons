@@ -7,16 +7,25 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
-contract FantomChess is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
+contract BadBalloons is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
     using Strings for uint256;
 
-    Counters.Counter private _tokenIdCounter;
     address payable public depositAddress = payable(0xFc3778f4b877B25A2A6B501a6Bd987bB6B43F7e0);
-    uint256 public maxMintable = 10000;
-    string private _baseUrl;
+
+    //NFT
     string public baseExtension = ".json";
-    bool public pause = false;
+    string private _baseUrl;
+    uint256 public maxMintable = 10000;
+    Counters.Counter private _tokenIdCounter;
+    uint256 public price = 0.03 ether;
+
+    //State
+    bool public pause_public_mint = true;
+    bool public pause_whitelist_mint = true;
+
+    //Whitelist
+    mapping(address => uint8) public whitelistedAddress;
 
     constructor(string memory baseUrl) ERC721("BadBalloons", "BB") {
         _baseUrl = baseUrl;
@@ -26,27 +35,58 @@ contract FantomChess is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
         return _baseUrl;
     }
 
-    function claim() public payable {
-        uint256 id = _tokenIdCounter.current();
-        uint256 price = 0.05 ether;
-
-        require(!pause, "Contract Paused");
-        require(msg.value == price, "Invalid amount");
-        require(id < (maxMintable), "No more balloons are available");
+    function mint_public(uint256 amount) public payable {
+        require(!pause_public_mint, "Contract Paused");
+        require(msg.value == price * amount, "Invalid amount");
 
         // transfer amount to owner
-        depositAddress.transfer(price);
+        depositAddress.transfer(price * amount);
 
-        _safeMint(msg.sender, id);
-        _tokenIdCounter.increment();
+        for (uint256 i = 0; i < amount; i++) {
+            mint(msg.sender);
+        }        
     }
 
+    function mint(address to) internal {
+        require(_tokenIdCounter.current() < maxMintable, "All balloons have been minted!");
+        _safeMint(to, _tokenIdCounter.current());
+        _tokenIdCounter.increment();
+    }    
+
+    //Whitelist
+    function addWhitelistAddresses(address[] memory _addresses) external onlyOwner {
+        for (uint256 i = 0; i < _addresses.length; i++) {
+            require(_addresses[i] != address(0), "Address cannot be 0.");
+            require(whitelistedAddress[_addresses[i]] == 0, "Balance must be 0.");
+            whitelistedAddress[_addresses[i]] = 10;
+        }
+    }
+    
+    function mint_whitelist(uint8 amount) public payable {
+        require(!pause_whitelist_mint, "Pre-sale has not started yet.");
+        require(whitelistedAddress[msg.sender] > 0, "The address can no longer pre-order");
+        require(amount <= whitelistedAddress[msg.sender], "All mints of the address are over");
+        require(msg.value == price * amount, "Invalid amount");
+
+        depositAddress.transfer(price * amount);
+
+        whitelistedAddress[msg.sender] -= amount;
+        for (uint8 i = 0; i < amount; i++) {
+            mint(msg.sender);
+        }
+    }
+
+    //Setters - only owner
     function setMaxMintable(uint256 value) public onlyOwner {
         maxMintable = value;
     }
 
-    function setPause(bool _pause) public onlyOwner {
-        pause = _pause;
+    function set_pause_public_mint(bool _pause) public onlyOwner {
+        pause_public_mint = _pause;
+    }
+
+    function set_pause_whitelist_mint(bool _pause) public onlyOwner {
+        pause_whitelist_mint = _pause;
     }
 
     function setTokenURI(uint256 tokenId, string memory newURI) public onlyOwner {
@@ -63,6 +103,10 @@ contract FantomChess is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
     
     function setDepositAddress(address payable to) public onlyOwner {
         depositAddress = to;
+    }
+
+    function setPrice(uint256 value) public onlyOwner {
+        price = value;
     }
     
     // The following functions are overrides required by Solidity.

@@ -12,7 +12,7 @@ function Index() {
   const [loading, setLoading] = useState(false);
 
   let abi = abiObj;
-  let contractAddress = "0x292c25415dac88bfd9a0017270357e9d42b7deb7";
+  let contractAddress = "0x5655244a33d6bc6a22704ee9a0f3bea836363faf";
   let videoAddress = 'https://bad-ballons.vercel.app/img/';
 
   useEffect(() => {
@@ -98,7 +98,7 @@ function Index() {
                   <br></br>
                   <img width='200' height='200' src={videoAddress + game.id + '.png'} />
 
-                  <a style={{marginLeft: 'auto', marginRight: 'auto', marginTop: 10}} rel='noreferrer' target='_blank' className='button' href={'https://testnets.opensea.io/assets/0x292c25415dac88bfd9a0017270357e9d42b7deb7/' + game.id}>Visualizar</a>
+                  <a style={{marginLeft: 'auto', marginRight: 'auto', marginTop: 10}} rel='noreferrer' target='_blank' className='button' href={'https://testnets.opensea.io/assets/' + contractAddress + '/' + game.id}>Visualizar</a>
                 </div>
               )
             })}
