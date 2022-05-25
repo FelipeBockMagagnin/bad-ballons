@@ -9,10 +9,98 @@ body {
     Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
   width: 100vw;
-  overflow-y: hidden;
-  background-color: #0da89b;
+  background-color: #333;
   overflow-x: hidden;
 }
+
+
+.container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "balloon logo logo planet"
+    "balloon . whitelist whitelist"
+    "roadmap roadmap whitelist whitelist"
+    "roadmap roadmap . galaxy"; 
+}
+
+@media (min-width: 653px) {
+  .balloon img {
+    margin-right: -100px;
+    width: 100% !important;
+    animation: move-balloon 5s ease infinite;
+  }
+}
+
+@media (max-width: 652px) {
+  .container {
+    display: grid; 
+    grid-template-columns: auto; 
+    grid-template-rows: auto;
+    gap: 0px 0px;  
+    grid-template-areas: 
+      "logo"
+      "balloon"
+      "whitelist"
+      "roadmap"
+      "galaxy"; 
+    }
+
+    .planet {
+      display: none !important;
+    }
+    
+    .logo img {
+      width: 30vh !important;
+    }
+
+    .whitelist .form-container{
+      width: 90% !important;
+    }
+}
+
+
+
+
+.logo { grid-area: logo; }
+.planet { grid-area: planet; }
+.balloon { grid-area: balloon; }
+.whitelist { grid-area: whitelist; }
+.roadmap { grid-area: roadmap; }
+.galaxy { grid-area: galaxy; }
+
+.center-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-center-grid {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
+.bottom-right-grid {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+@keyframes move-balloon {
+  0% {
+    margin-top: -50%;
+  }
+  50% {
+    margin-top: 50%;
+  }
+  100% {
+    margin-top: -50%;
+  }
+}
+
 
 a {
   color: inherit;
@@ -92,7 +180,7 @@ a {
 
 .button {
   height: 45px;
-  width: 200px;
+  width: 150px;
   font-weight: bold;
   font-size: 12px;
   color: rgb(255, 255, 255);
@@ -224,7 +312,7 @@ ul li ul li a {
   flex-wrap: wrap;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 652px) {
   div.primary-navigation ul li ul li a:hover {
     padding-left: 10px;
     border-left: 2px solid #3ca0e7;
@@ -243,14 +331,10 @@ ul li ul li a {
     padding: 7px 0px;
   }
 
-  .header {
-    flex-direction: column;
-  }
 
-  .header div {
-    margin-top: 10px;
+  .header .button {
+    margin-top: 0;
   }
-
 
   .form-container {
     margin-top: 20px;
