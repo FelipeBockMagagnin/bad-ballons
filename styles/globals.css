@@ -9,28 +9,49 @@ body {
     Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
   width: 100vw;
-  background-color: #333;
+  background-color: #000;
+  z-index: -2;
   overflow-x: hidden;
+  
+  position: relative;
+}
+
+.stars {
+  background: url('/assets/stars.png');
+  background-repeat: repeat;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-size: 818px 600px ;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
 
 
 .container {
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: auto auto auto auto; 
   gap: 0px 0px; 
   grid-template-areas: 
-    "balloon logo logo planet"
-    "balloon . whitelist whitelist"
+    "logo logo logo logo"
+    "balloon balloon whitelist whitelist"
     "roadmap roadmap whitelist whitelist"
     "roadmap roadmap . galaxy"; 
 }
 
+.logo img{
+  max-width: 20vw;
+}
+
 @media (min-width: 653px) {
   .balloon img {
-    margin-right: -100px;
-    width: 100% !important;
-    animation: move-balloon 5s ease infinite;
+    width: 70% !important;
+  }
+
+  .planet img {
+    width: 100%;
   }
 }
 
@@ -53,12 +74,20 @@ body {
     }
     
     .logo img {
-      width: 30vh !important;
+      width: 40vw !important;
+      max-width: 50vw;
     }
 
     .whitelist .form-container{
       width: 90% !important;
     }
+}
+
+.planet {
+  position: absolute;
+  top: 80px;
+  right: 0%;
+  width: 20vw;
 }
 
 
@@ -91,13 +120,13 @@ body {
 
 @keyframes move-balloon {
   0% {
-    margin-top: -50%;
+    margin-top: 0;
   }
   50% {
     margin-top: 50%;
   }
   100% {
-    margin-top: -50%;
+    margin-top: 0;
   }
 }
 

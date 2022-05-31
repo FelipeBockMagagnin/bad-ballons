@@ -24,19 +24,19 @@ function Index() {
 
       <div className="container">
         <div className="logo" style={{textAlign: 'center'}}>
-          <img src='/assets/bad-balloons-logo.png' alt='logo' style={{ width: '30vh' }} />
+          <img src='/assets/bad-balloons-logo.png' alt='logo' />
         </div>
 
-        <div className="planet center-grid">
-          <img src='/assets/planet.png' alt='logo' style={{ width: '75%' }} />
+        <div className="planet">
+          <img src='/assets/planet.png' alt='logo' style={{ width: '100%' }} />
         </div>
 
         <div className="balloon center-grid">
-          <img src='/assets/balloon1.jpeg' style={{ display: 'inline', width: '75%', height: 'auto', borderRadius: '20px' }} className='image-frame' />
+          <img src='/assets/balloon1.jpeg' style={{ display: 'inline', width: '50%', height: 'auto', borderRadius: '20px' }} className='image-frame' />
         </div>
 
         <div className="whitelist top-center-grid">
-          <div className="form-container" style={{ margin: '10px', width: '50%' }}>
+          <div className="form-container" style={{ width: '80%' }}>
             <div className='content-container'>
 
               <div style={{ margin: 20 }}>
@@ -159,6 +159,7 @@ function Index() {
           <img src='/assets/portal.png' className='image-frame' />
         </div>
       </div>
+      <div className='stars'></div>
     </Fragment>
   )
 }

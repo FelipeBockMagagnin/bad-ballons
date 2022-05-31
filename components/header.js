@@ -32,6 +32,8 @@ export default function Header({ wallet, isReady, address, staticPage }) {
             {!staticPage && <button className='button' onClick={wallet}>
                 {isReady ? address?.substring(0, 6) + "..." + address?.substring(address.length - 4, address.length) : "Connect"} { }
             </button>}
+
+            
         </div>
         </Fragment>
     )
