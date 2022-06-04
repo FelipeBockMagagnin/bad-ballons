@@ -24,7 +24,7 @@ function Index() {
 
       <div className="container">
         <div className="logo" style={{textAlign: 'center'}}>
-          <img src='/assets/bad-balloons-logo.png' alt='logo' style={{ width: '30vh' }} />
+          <img src='/assets/logo.gif' alt='logo' style={{ width: '30vh' }} />
         </div>
 
         <div className="planet center-grid">
@@ -44,10 +44,7 @@ function Index() {
               </div>
 
               <div style={{ flex: 1, marginTop: 10, textAlign: 'justify' }}>
-
                 Bad Balloons is a collection of <div className='colorGradient'>3333</div> random generated Ballons stored on the <div className='colorGradient'>Ethereum</div> Blockchain.
-
-                
               </div>
 
               <br />
