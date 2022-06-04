@@ -32,7 +32,7 @@ function Index() {
         </div>
 
         <div className="balloon center-grid">
-          <img src='/assets/balloon1.jpeg' style={{ display: 'inline', width: '75%', height: 'auto', borderRadius: '20px' }} className='image-frame' />
+          <img src='/assets/balloons.gif' style={{ display: 'inline', width: '75%', height: 'auto', borderRadius: '20px' }} className='image-frame' />
         </div>
 
         <div className="whitelist top-center-grid">
