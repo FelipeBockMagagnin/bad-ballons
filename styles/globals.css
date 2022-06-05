@@ -26,6 +26,7 @@ body {
   z-index: -1;
   top: 0;
   left: 0;
+  filter: blur(1px);
 }
 
 
@@ -37,12 +38,12 @@ body {
   grid-template-areas: 
     "logo logo logo logo"
     "balloon balloon whitelist whitelist"
-    "roadmap roadmap whitelist whitelist"
-    "roadmap roadmap . galaxy"; 
+    "roadmap roadmap roadmap roadmap"
+    ". . . ."; 
 }
 
 .logo img{
-  max-width: 20vw;
+  max-width: 30vw;
 }
 
 @media (min-width: 653px) {
@@ -88,6 +89,20 @@ body {
   top: 80px;
   right: 0%;
   width: 20vw;
+  animation: planet-anim 10s linear infinite;
+
+}
+
+@keyframes planet-anim {
+  0% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-45deg); /* The image width */
+  }
 }
 
 
@@ -158,6 +173,7 @@ a {
   width: 55vw;
   padding: 20px;
   margin-bottom: 30px;  
+  height: 100%;
 }
 
 .tittle {
@@ -171,7 +187,7 @@ a {
 }
 
 .colorGradient {
-  background: linear-gradient(90deg, red, blue);
+  background: #f5342c;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   display: inline;
@@ -214,6 +230,7 @@ a {
   font-size: 12px;
   color: rgb(255, 255, 255);
   box-shadow: rgb(38 120 113 / 15%) 0px 4px 20px 5px;
+  background-color: #f5342c;
   border-radius: 20px;
   border: none;
   cursor: pointer;
@@ -225,7 +242,6 @@ a {
   margin-top: 0px;
   margin-bottom: 0px;
   font-family: "PRESS START 2P";
-  animation: button 5s ease infinite;
 }
 
 .mr-10 {
@@ -238,21 +254,6 @@ a {
   justify-content: center;
   width: 100%;
   flex-direction: column;
-}
-
-@keyframes button {
-  0% {
-    background-color: green;
-  }
-  20% {
-    background-color: blue;
-  }
-  70% {
-    background-color: purple;
-  }
-  100% {
-    background-color: green;
-  }
 }
 
 .menus {
@@ -602,4 +603,20 @@ input[type=number] {
                5px 5px black, 
                6px 6px black;
   }
+}
+
+.spinner {
+  animation: spin infinite 1s linear;
+  margin-bottom: -3px;
+  /*You can increase or decrease the timer (5s) to 
+   increase or decrease the speed of the spinner*/
+}
+
+@keyframes spin {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
 }
