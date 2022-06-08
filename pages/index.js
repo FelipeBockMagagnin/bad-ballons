@@ -40,49 +40,9 @@ function Index() {
 
         <div className="whitelist top-center-grid">
           <div className="form-container" style={{ width: '80%' }}>
-            <div className='content-container'>
-
-              <div style={{ margin: 20 }}>
-
-              </div>
-
-              <div style={{ flex: 1, marginTop: 10, textAlign: 'justify' }}>
+            <div className='content-container' style={{ height: '100%' }}>
+              <div style={{ flex: 1, marginTop: 10, textAlign: 'center', fontSize: '3em', color: 'white' }}>
                 A collection of <div className='colorGradient'>XXXX</div> random generated Ballons stored on the <div className='colorGradient'>Ethereum</div> Blockchain for <div className='colorGradient'>0.XX ETH</div> each.
-              </div>
-
-              <div>
-                <br />
-                <div className='colorGradient'>MINTING REWARDS:</div>
-
-                <br />
-                - 1/1 Token Reward up to $25K in ETH
-                (By mint one of the 5 special golden balloons, get $5k ETH in your wallet)
-
-                <br />
-                - Exclusive discord giveaways every week!
-
-                <br />
-                - 3% of Transaction Royalties go to whoever originally minted
-
-                <br />
-                <br />
-
-                <div className='colorGradient'>HOLDING REWARDS</div>
-
-                <br />
-                - AirDrops
-
-                <br />
-                - Holders Travels Giveaway (3 trips to anywhere in the world all paid for)
-
-                <br />
-                - (DAO Voting Power) We will create a system for members that acquires an NFT have a voice in the next project decisions
-
-                <br />
-                - Exclusive access to the Bad Store with discounted Balloons custom clothing items.
-
-                <br />
-                - 3D NFTs Ready for Metaverse
               </div>
 
               <br />
@@ -93,99 +53,103 @@ function Index() {
 
               <div style={{ marginTop: '20px' }}>
                 <a href='https://discord.com/invite/YV7ezZsUkV' className='mr-10' target='_blank' rel="noreferrer">
-                  <FontAwesomeIcon icon={faDiscord} size='2x' />
+                  <FontAwesomeIcon icon={faDiscord} size='2x' style={{color: 'white'}} />
                 </a>
 
                 <a href='https://twitter.com/badballoonsNFT' target='_blank' className='mr-10' rel="noreferrer">
-                  <FontAwesomeIcon icon={faTwitter} size='2x' />
+                  <FontAwesomeIcon icon={faTwitter} size='2x' style={{color: 'white'}} />
                 </a>
 
                 <a href='https://www.instagram.com/badballoonsnft/' target='_blank' className='mr-10' rel="noreferrer">
-                  <FontAwesomeIcon icon={faInstagram} size='2x' />
+                  <FontAwesomeIcon icon={faInstagram} size='2x' style={{color: 'white'}} />
                 </a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="roadmap top-center-grid" style={{ color: 'white', textAlign: 'center', marginTop: '100px' }}>
+        <div className="roadmap top-center-grid" style={{ color: 'white', textAlign: 'center', marginTop: '100px' }}>
           <div>
+            <div>
+              <div className="form-container" style={{ width: '80%', marginLeft: 'auto', marginRight: 'auto' }}>
+
+                <h1 className='colorGradient'>What is the collection for?</h1>
+
+                <br />
+                <br />
+                A collection of 5,555 unique NFT PFPs <br />with an fresh new and innovative balloon art style
+
+                <br />
+                <br />
+                To save children through the web3
+
+                <br />
+                <br />
+                Be part of an exclusive community
+
+                <br/>
+
+                Access to BadVerse, the world of balloons in the metaverse
+              </div>
+
+              <br />
+              <br />
+
+              <div className="form-container" style={{ width: '80%', marginLeft: 'auto', marginRight: 'auto' }}>
+                <h1 className='colorGradient'>What makes it different from the others?</h1>
+
+                <br />
+                <br />
+                Balloons lmao
+
+                <br />
+                <br />
+                An entire universe and story behind the NFTs, <br/>promising the creation of a unique community
+
+                <br />
+                <br />
+                Handmade arts, created from asbolute scratch by our artist <br/>(since I bet you've identified with a balloon before...)
+
+                <br />
+                <br />
+                By buying an NFT you are helping many people in need. <br/>We’ll be donating 10% of the total amount
+
+              </div>
+
+              <br/>
+              <br/>
+
+              <div className="form-container" style={{ width: '80%', marginLeft: 'auto', marginRight: 'auto' }}>
+                <h1 className='colorGradient'>What will we do with the money?</h1>
+
+                <br />
+                <br />
+                10% goes to donation
+
+                <br />
+                <br />
+                --% goes right back into the project
+
+                <br />
+                <br />
+                --% to the team
+
+
+              </div>
+
+            </div>
+
+            <br/>
+            <br/>
+
             <h1 className='colorGradient'>Roadmap</h1>
 
             <br />
             <br />
             <br />
             <br />
-            <br />
-            <br />
-            <br />
-            <br />
 
-            <FontAwesomeIcon icon={faSpinner} size='2x' className="spinner" /> 1. Launch of the collection
-
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-
-            <FontAwesomeIcon icon={faSpinner} size='2x' className="spinner" /> 2. Connection with the community
-
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-
-            <FontAwesomeIcon icon={faSpinner} size='2x' className="spinner" /> 3. Altruistic Movement
-
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-
-            <FontAwesomeIcon icon={faSpinner} size='2x' className="spinner" /> 4. Balloons Brand
-
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-
-            <FontAwesomeIcon icon={faSpinner} size='2x' className="spinner" /> 5. Metaverse
-
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-
-            <FontAwesomeIcon icon={faSpinner} size='2x' className="spinner" /> 6. Game NFT Bad Balloons
-
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+            <FontAwesomeIcon icon={faSpinner} size='2x' className="spinner" /> 1. Loading
           </div>
         </div>
 

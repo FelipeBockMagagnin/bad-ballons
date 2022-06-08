@@ -4,7 +4,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'akira_expandedsuper_bold', -apple-system, BlinkMacSystemFont, Segoe UI,
     Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
@@ -168,7 +168,9 @@ a {
 }
 
 .form-container {
-  background-color: white;
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  background: rgb(104 104 104 / 72%);
   border-radius: 20px;
   width: 55vw;
   padding: 20px;
