@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url('/assets/stylesheet.css');
 
 html,
 body {
   padding: 0;
   margin: 0;
   font-size: 14px;
-  font-family: "Press Start 2P", -apple-system, BlinkMacSystemFont, Segoe UI,
+  font-family: 'akira_expandedsuper_bold', -apple-system, BlinkMacSystemFont, Segoe UI,
     Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
   width: 100vw;
