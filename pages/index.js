@@ -41,7 +41,7 @@ function Index() {
         <div className="whitelist top-center-grid">
           <div className="form-container" style={{ width: '80%' }}>
             <div className='content-container' style={{ height: '100%' }}>
-              <div style={{ flex: 1, marginTop: 10, textAlign: 'center', fontSize: '3em', color: 'white' }}>
+              <div style={{ flex: 1, marginTop: 10, textAlign: 'center', fontSize: '2.5vw', color: 'white' }}>
                 A collection of <div className='colorGradient'>XXXX</div> random generated Ballons stored on the <div className='colorGradient'>Ethereum</div> Blockchain for <div className='colorGradient'>0.XX ETH</div> each.
               </div>
 
