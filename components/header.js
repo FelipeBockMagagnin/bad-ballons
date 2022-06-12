@@ -14,6 +14,10 @@ export default function Header({ wallet, isReady, address, staticPage }) {
                         </li>
 
                         <li>
+                            <a href="/save-child">save a Child</a>
+                        </li>
+
+                        <li>
                             <a href="/history">history</a>
                         </li>
 

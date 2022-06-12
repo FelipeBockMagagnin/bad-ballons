@@ -27,27 +27,27 @@ function Index() {
 
       <div className="container">
         <div className="logo" style={{ textAlign: 'center' }}>
-          <img src='/assets/logo.gif' alt='logo' style={{ width: '60vh' }} />
+          <img src='/assets/logo.gif' alt='logo' style={{ width: '90vh' }} />
         </div>
 
         <div className="planet">
           <img src='/assets/planet.png' alt='logo' style={{ width: '100%' }} />
         </div>
 
-        <div className="balloon center-grid">
+        <div className="balloon center-grid" style={{marginTop: '-20vh'}}>
           <img src='/assets/balloons.gif' style={{ display: 'inline', width: '75%', height: 'auto', borderRadius: '20px' }} className='image-frame' />
         </div>
 
-        <div className="whitelist top-center-grid">
+        <div className="whitelist top-center-grid" style={{marginTop: '-20vh'}}>
           <div className="form-container" style={{ width: '80%' }}>
             <div className='content-container' style={{ height: '100%' }}>
-              <div style={{ flex: 1, marginTop: 10, textAlign: 'center', fontSize: '2.5vw', color: 'white' }}>
-                A collection of <div className='colorGradient'>XXXX</div> random generated Ballons stored on the <div className='colorGradient'>Ethereum</div> Blockchain for <div className='colorGradient'>0.XX ETH</div> each.
+              <div style={{ marginTop: 10, textAlign: 'center', fontSize: '2.5vw', color: 'white', textTransform: 'capitalize' }}>
+                A collection of <div className='colorGradient'>XXXX</div> handly maded Ballons stored on the <div className='colorGradient'>Ethereum</div> Blockchain for <div className='colorGradient'>0.XX ETH</div> each.
               </div>
 
               <br />
 
-              <button className='button' style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: 20 }}>
+              <button className='button' style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: 20, width: '50%', height: 70, fontSize: '25px' }}>
                 Whitelist
               </button>
 
@@ -68,73 +68,77 @@ function Index() {
           </div>
         </div>
 
-        <div className="roadmap top-center-grid" style={{ color: 'white', textAlign: 'center', marginTop: '100px' }}>
-          <div>
+        <div className="roadmap top-center-grid" style={{ color: 'white', marginTop: '100px', fontSize: '20px', textTransform: 'capitalize' }}>
+          <div style={{width: '100%'}}>
             <div>
-              <div className="form-container" style={{ width: '80%', marginLeft: 'auto', marginRight: 'auto' }}>
+              <div className="form-container" style={{ width: '85%', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}>
 
-                <h1 className='colorGradient'>What is the collection for?</h1>
+                <h1 className='colorGradient' style={{textAlign: 'center'}}>What is the collection for?</h1>
 
-                <br />
-                <br />
-                A collection of 5,555 unique NFT PFPs <br />with an fresh new and innovative balloon art style
+                <div style={{textAlign: 'left', fontSize: '30px'}}>
+                  <br />
+                  - A collection of XXXX unique NFT PFPs with an fresh new and innovative balloon art style
 
-                <br />
-                <br />
-                To save children through the web3
+                  <br />
+                  <br />
+                  - To save children through the web3
 
-                <br />
-                <br />
-                Be part of an exclusive community
+                  <br />
+                  <br />
+                  - To Create an exclusive community of revolutionaries
 
-                <br/>
+                  <br/>
+                  <br/>
 
-                Access to BadVerse, the world of balloons in the metaverse
+                  - Access to BadVerse, the world of balloons in the metaverse
+                </div>
+                
               </div>
 
               <br />
               <br />
 
-              <div className="form-container" style={{ width: '80%', marginLeft: 'auto', marginRight: 'auto' }}>
+              <div className="form-container" style={{ width: '85%', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}>
                 <h1 className='colorGradient'>What makes it different from the others?</h1>
 
-                <br />
-                <br />
-                Balloons lmao
+                <div style={{textAlign: 'left', fontSize: '30px'}}>
+                  <br />
+                  - Balloons lmao
 
-                <br />
-                <br />
-                An entire universe and story behind the NFTs, <br/>promising the creation of a unique community
+                  <br />
+                  <br />
+                  - An entire universe and story behind the NFTs, promising the creation of a unique community
 
-                <br />
-                <br />
-                Handmade arts, created from asbolute scratch by our artist <br/>(since I bet you've identified with a balloon before...)
+                  <br />
+                  <br />
+                  - Handmade arts, created from asbolute scratch by our artist <div className='gold'>(since I bet you've identified with a balloon before...)</div>
 
-                <br />
-                <br />
-                By buying an NFT you are helping many people in need. <br/>We’ll be donating 10% of the total amount
+                  <br />
+                  <br />
+                  - By buying an NFT you are helping many people in need. We’ll be donating 10% of the total amount raised to the <div className='colorGradient'>(DAO choice)</div> foundation
 
+                </div>
+                
               </div>
 
               <br/>
               <br/>
 
-              <div className="form-container" style={{ width: '80%', marginLeft: 'auto', marginRight: 'auto' }}>
+              <div className="form-container" style={{ width: '85%', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}>
                 <h1 className='colorGradient'>What will we do with the money?</h1>
 
-                <br />
-                <br />
-                10% goes to donation
+                <div style={{textAlign: 'left', fontSize: '30px'}}>
+                  <br />
+                  <div className='gold'>- 10%</div> goes to donation
 
-                <br />
-                <br />
-                --% goes right back into the project
+                  <br />
+                  <br />
+                  <div className='gold'>- 20%</div> goes right back into the project
 
-                <br />
-                <br />
-                --% to the team
-
-
+                  <br />
+                  <br />
+                  <div className='gold'>- 70%</div> to the team
+                </div>
               </div>
 
             </div>

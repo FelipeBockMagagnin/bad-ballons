@@ -43,7 +43,7 @@ body {
 }
 
 .logo img{
-  max-width: 30vw;
+  max-width: 50vw;
 }
 
 @media (min-width: 653px) {
@@ -52,7 +52,7 @@ body {
   }
 
   .planet img {
-    width: 100%;
+    width: 30vw;
   }
 }
 
@@ -75,8 +75,8 @@ body {
     }
     
     .logo img {
-      width: 40vw !important;
-      max-width: 50vw;
+      width: 90vw !important;
+      max-width: 90vw;
     }
 
     .whitelist .form-container{
@@ -87,10 +87,10 @@ body {
 .planet {
   position: absolute;
   top: 80px;
-  right: 0%;
+  right: 15vw;
   width: 20vw;
-  animation: planet-anim 10s linear infinite;
-
+  /*animation: planet-anim 10s linear infinite;*/
+  transform: rotate(15deg);
 }
 
 @keyframes planet-anim {
@@ -108,13 +108,16 @@ body {
 
 
 
-.logo { grid-area: logo; }
+.logo { grid-area: logo; z-index: 1000; }
 .planet { grid-area: planet; }
 .balloon { grid-area: balloon; }
 .whitelist { grid-area: whitelist; }
 .roadmap { grid-area: roadmap; }
 .galaxy { grid-area: galaxy; }
 
+.balloon .whitelist {
+  margin-top: -10vh;
+}
 .center-grid {
   display: flex;
   justify-content: center;
@@ -170,7 +173,7 @@ a {
 .form-container {
   -webkit-backdrop-filter: blur(7px);
   backdrop-filter: blur(7px);
-  background: rgb(104 104 104 / 72%);
+  background: rgb(30 30 30 / 72%);
   border-radius: 20px;
   width: 55vw;
   padding: 20px;
@@ -190,6 +193,13 @@ a {
 
 .colorGradient {
   background: #f5342c;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  display: inline;
+}
+
+.gold {
+  background: #f1d455;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   display: inline;
@@ -243,7 +253,9 @@ a {
   justify-content: center;
   margin-top: 0px;
   margin-bottom: 0px;
-  font-family: "PRESS START 2P";
+  font-family: 'akira_expandedsuper_bold', -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
 }
 
 .mr-10 {
@@ -285,7 +297,10 @@ div.primary-navigation ul li {
   text-align: center;
 }
 div.primary-navigation li a {
-  color: #f5342c;
+  color: black;
+  background-color: #f5342c;
+  padding: 5px 12px;
+  border-radius: 20px;
 }
 div.primary-navigation li a:hover {
   color: white;
@@ -505,7 +520,7 @@ ul li ul li a {
   font-size: 16px;
   border: none;
   cursor: pointer;
-  font-family: "Press Start 2P", -apple-system, BlinkMacSystemFont, Segoe UI,
+  font-family: 'akira_expandedsuper_bold', -apple-system, BlinkMacSystemFont, Segoe UI,
     Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
 }
