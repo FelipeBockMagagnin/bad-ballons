@@ -146,6 +146,74 @@ function Index() {
             <br/>
             <br/>
 
+            <div className='minting-rewards'>
+              <div>
+                <h1 className='gold'>MINTING REWARDS:</h1>
+
+                <div style={{fontSize: '30px'}}>
+                  <br/>
+                  
+                  - 1/1 TOKEN REWARD UP TO <div className='colorGradient'>$25K</div> IN ETH
+                  
+                  <br/>
+                  <br/>
+
+                  - EXCLUSIVE DISCORD GIVEAWAYS EVERY WEEK!
+
+                  <br/>
+                  <br/>
+
+                  - VOTING POWER IN OUR <div className='gold'>DAO</div>
+                </div> 
+              </div>
+              <div>
+
+              </div>
+            </div>
+
+            <br/>
+            <br/>
+
+            <br/>
+            <br/>
+
+            <div className='minting-rewards'>
+              <div>
+                <h1 className='gold'>HOLDING REWARDS:</h1>
+
+                <div style={{fontSize: '30px'}}>
+                  <br/>
+                  
+                  - AIRDROPS
+                  
+                  <br/>
+                  <br/>
+
+                  - <div className='gold'>HOLDERS TRAVELS GIVEAWAYS</div> (3 TRIPS TO ANYWHERE IN THE WORLD ALL PAID FOR)
+
+                  <br/>
+                  <br/>
+
+                  - (DAO VOTING POWER) WE ARE CREATING A SYSTEM FOR MEMBERS THAT ACQUIRES AN NFT <div className='gold'>HAVE A VOICE</div> IN THE <div>NEXT PROJECT DECISIONS</div>
+                
+                  <br/>
+                  <br/>
+
+                  - <div className='gold'>EXCLUSIVE ACCESS</div> TO THE <div className='gold'>BAD STORE</div> WITH DISCOUNTED BALLOONS CUSTOM CHOTHING ITEMS
+
+                  <br/>
+                  <br/>
+
+                  - <div className='gold'>3D NFTS</div> READY FOT METAVERSE
+
+                </div> 
+              </div>
+              <div>
+
+              </div>
+            </div>
+
+
             <h1 className='colorGradient'>Roadmap</h1>
 
             <br />
