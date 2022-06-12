@@ -31,14 +31,14 @@ function Index() {
         </div>
 
         <div className="planet">
-          <img src='/assets/planet.png' alt='logo' style={{ width: '100%' }} />
+          <img src='/assets/planet.png' alt='logo' style={{ width: '30vw' }} />
         </div>
 
-        <div className="balloon center-grid" style={{marginTop: '-20vh'}}>
+        <div className="balloon center-grid" style={{ marginTop: '-20vh' }}>
           <img src='/assets/balloons.gif' style={{ display: 'inline', width: '75%', height: 'auto', borderRadius: '20px' }} className='image-frame' />
         </div>
 
-        <div className="whitelist top-center-grid" style={{marginTop: '-20vh'}}>
+        <div className="whitelist top-center-grid" style={{ marginTop: '-20vh' }}>
           <div className="form-container" style={{ width: '80%' }}>
             <div className='content-container' style={{ height: '100%' }}>
               <div style={{ marginTop: 10, textAlign: 'center', fontSize: '2.5vw', color: 'white', textTransform: 'capitalize' }}>
@@ -53,15 +53,15 @@ function Index() {
 
               <div style={{ marginTop: '20px' }}>
                 <a href='https://discord.com/invite/YV7ezZsUkV' className='mr-10' target='_blank' rel="noreferrer">
-                  <FontAwesomeIcon icon={faDiscord} size='2x' style={{color: 'white'}} />
+                  <FontAwesomeIcon icon={faDiscord} size='2x' style={{ color: 'white' }} />
                 </a>
 
                 <a href='https://twitter.com/badballoonsNFT' target='_blank' className='mr-10' rel="noreferrer">
-                  <FontAwesomeIcon icon={faTwitter} size='2x' style={{color: 'white'}} />
+                  <FontAwesomeIcon icon={faTwitter} size='2x' style={{ color: 'white' }} />
                 </a>
 
                 <a href='https://www.instagram.com/badballoonsnft/' target='_blank' className='mr-10' rel="noreferrer">
-                  <FontAwesomeIcon icon={faInstagram} size='2x' style={{color: 'white'}} />
+                  <FontAwesomeIcon icon={faInstagram} size='2x' style={{ color: 'white' }} />
                 </a>
               </div>
             </div>
@@ -69,13 +69,13 @@ function Index() {
         </div>
 
         <div className="roadmap top-center-grid" style={{ color: 'white', marginTop: '100px', fontSize: '20px', textTransform: 'capitalize' }}>
-          <div style={{width: '100%'}}>
+          <div style={{ width: '100%' }}>
             <div>
               <div className="form-container" style={{ width: '85%', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}>
 
-                <h1 className='colorGradient' style={{textAlign: 'center'}}>What is the collection for?</h1>
+                <h1 className='colorGradient' style={{ textAlign: 'center' }}>What is the collection for?</h1>
 
-                <div style={{textAlign: 'left', fontSize: '30px'}}>
+                <div style={{ textAlign: 'left', fontSize: '30px' }}>
                   <br />
                   - A collection of XXXX unique NFT PFPs with an fresh new and innovative balloon art style
 
@@ -87,12 +87,12 @@ function Index() {
                   <br />
                   - To Create an exclusive community of revolutionaries
 
-                  <br/>
-                  <br/>
+                  <br />
+                  <br />
 
                   - Access to BadVerse, the world of balloons in the metaverse
                 </div>
-                
+
               </div>
 
               <br />
@@ -101,7 +101,7 @@ function Index() {
               <div className="form-container" style={{ width: '85%', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}>
                 <h1 className='colorGradient'>What makes it different from the others?</h1>
 
-                <div style={{textAlign: 'left', fontSize: '30px'}}>
+                <div style={{ textAlign: 'left', fontSize: '30px' }}>
                   <br />
                   - Balloons lmao
 
@@ -118,16 +118,16 @@ function Index() {
                   - By buying an NFT you are helping many people in need. We’ll be donating 10% of the total amount raised to the <div className='colorGradient'>(DAO choice)</div> foundation
 
                 </div>
-                
+
               </div>
 
-              <br/>
-              <br/>
+              <br />
+              <br />
 
               <div className="form-container" style={{ width: '85%', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}>
                 <h1 className='colorGradient'>What will we do with the money?</h1>
 
-                <div style={{textAlign: 'left', fontSize: '30px'}}>
+                <div style={{ textAlign: 'left', fontSize: '30px' }}>
                   <br />
                   <div className='gold'>- 10%</div> goes to donation
 
@@ -143,87 +143,122 @@ function Index() {
 
             </div>
 
-            <br/>
-            <br/>
+            <br />
+            <br />
 
             <div className='minting-rewards'>
               <div>
                 <h1 className='gold'>MINTING REWARDS:</h1>
 
-                <div style={{fontSize: '30px'}}>
-                  <br/>
-                  
+                <div style={{ fontSize: '30px' }}>
+                  <br />
+
                   - 1/1 TOKEN REWARD UP TO <div className='colorGradient'>$25K</div> IN ETH
-                  
-                  <br/>
-                  <br/>
+
+                  <br />
+                  <br />
 
                   - EXCLUSIVE DISCORD GIVEAWAYS EVERY WEEK!
 
-                  <br/>
-                  <br/>
+                  <br />
+                  <br />
 
                   - VOTING POWER IN OUR <div className='gold'>DAO</div>
-                </div> 
+                </div>
               </div>
               <div>
 
               </div>
             </div>
 
-            <br/>
-            <br/>
+            <br />
+            <br />
 
-            <br/>
-            <br/>
+            <br />
+            <br />
 
             <div className='minting-rewards'>
               <div>
                 <h1 className='gold'>HOLDING REWARDS:</h1>
 
-                <div style={{fontSize: '30px'}}>
-                  <br/>
-                  
+                <div style={{ fontSize: '30px' }}>
+                  <br />
+
                   - AIRDROPS
-                  
-                  <br/>
-                  <br/>
+
+                  <br />
+                  <br />
 
                   - <div className='gold'>HOLDERS TRAVELS GIVEAWAYS</div> (3 TRIPS TO ANYWHERE IN THE WORLD ALL PAID FOR)
 
-                  <br/>
-                  <br/>
+                  <br />
+                  <br />
 
                   - (DAO VOTING POWER) WE ARE CREATING A SYSTEM FOR MEMBERS THAT ACQUIRES AN NFT <div className='gold'>HAVE A VOICE</div> IN THE <div>NEXT PROJECT DECISIONS</div>
-                
-                  <br/>
-                  <br/>
+
+                  <br />
+                  <br />
 
                   - <div className='gold'>EXCLUSIVE ACCESS</div> TO THE <div className='gold'>BAD STORE</div> WITH DISCOUNTED BALLOONS CUSTOM CHOTHING ITEMS
 
-                  <br/>
-                  <br/>
+                  <br />
+                  <br />
 
                   - <div className='gold'>3D NFTS</div> READY FOT METAVERSE
 
-                </div> 
+                </div>
               </div>
               <div>
 
               </div>
             </div>
 
-
-            <h1 className='colorGradient'>Roadmap</h1>
-
             <br />
             <br />
             <br />
             <br />
 
-            <FontAwesomeIcon icon={faSpinner} size='2x' className="spinner" /> 1. Loading
+            <div className='minting-rewards'>
+              <h1 className='colorGradient'>Roadmap</h1>
+
+              <br />
+              <br />
+
+              <FontAwesomeIcon icon={faSpinner} size='2x' className="spinner" /> 1. Loading
+
+            </div>
+
+
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <br />
+        <br />
+        <br />
+        <br />
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <br />
+        <br />
+        <br />
+        <br />
           </div>
+
+          
         </div>
+
+        
 
 
         <div class="galaxy bottom-right-grid">
