@@ -262,7 +262,7 @@ function Index() {
 
 
         <div class="galaxy bottom-right-grid">
-          <img src='/assets/portal.png' className='image-frame' style={{ width: 'auto' }} />
+          <img src='/assets/portal.png' className='image-frame' style={{ width: '50vw', height: 'auto' }} />
         </div>
       </div>
       <div className='stars'></div>
