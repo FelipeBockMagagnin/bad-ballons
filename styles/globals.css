@@ -29,6 +29,11 @@ body {
   filter: blur(2px);
 }
 
+.note {
+  font-size: 20px;
+  margin-left: 40px;
+}
+
 
 .container {
   display: grid; 
@@ -86,11 +91,20 @@ body {
 
 .planet {
   position: absolute;
-  top: 80px;
+  top: 0px;
   right: 15vw;
   width: 20vw;
   /*animation: planet-anim 10s linear infinite;*/
-  transform: rotate(15deg);
+}
+
+.roadmap-header {
+  color: #f5342c;
+  background-color: white;
+  padding: 9px;
+  border-radius: 20px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @keyframes planet-anim {
@@ -200,6 +214,12 @@ a {
 
 .minting-rewards {
   text-align: center;
+  display: flex;
+}
+
+.roadmap-container{
+  text-align: center;
+  font-size: 30px;
 }
 
 .gold {

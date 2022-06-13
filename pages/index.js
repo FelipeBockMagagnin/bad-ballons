@@ -134,8 +134,10 @@ function Index() {
                   <br />
                   <br />
                   <div className='gold'>- 20%</div> goes right back into the project
+                  <div className='note'>
+                    <div className='colorGradient'>-</div> Buying land in the metaverse, expanding the team, marketing money, giveaways, travel money for the winners, etc. . .
+                  </div>
 
-                  <br />
                   <br />
                   <div className='gold'>- 70%</div> to the team
                 </div>
@@ -148,14 +150,24 @@ function Index() {
 
             <div className='minting-rewards'>
               <div>
-                <h1 className='gold'>MINTING REWARDS:</h1>
+                <img src='/assets/balloon-hold.png' alt='logo' style={{ width: '40vw' }} />
+              </div>
+              <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                
 
                 <div style={{ fontSize: '30px' }}>
+                  <h1 className='gold'>MINTING REWARDS:</h1>
+
+                  <br />
                   <br />
 
                   - 1/1 TOKEN REWARD UP TO <div className='colorGradient'>$25K</div> IN ETH
+                  <div className='note'>
+                    <div className='gold' style={{fontSize: 25}}>
+                      - (BY MINT ONE OF THE 5 SPECIAL GOLDEN BALLOONS, <br/>GET $5K IN ETH ON YOUR WALLET)
+                    </div>
+                  </div>
 
-                  <br />
                   <br />
 
                   - EXCLUSIVE DISCORD GIVEAWAYS EVERY WEEK!
@@ -166,9 +178,7 @@ function Index() {
                   - VOTING POWER IN OUR <div className='gold'>DAO</div>
                 </div>
               </div>
-              <div>
-
-              </div>
+              
             </div>
 
             <br />
@@ -178,10 +188,13 @@ function Index() {
             <br />
 
             <div className='minting-rewards'>
-              <div>
-                <h1 className='gold'>HOLDING REWARDS:</h1>
+              <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                
 
-                <div style={{ fontSize: '30px' }}>
+                <div style={{ fontSize: '30px', width: '80%', marginLeft: 'auto' }}>
+                  <h1 className='gold'>HOLDING REWARDS:</h1>
+
+                  <br />
                   <br />
 
                   - AIRDROPS
@@ -208,8 +221,9 @@ function Index() {
 
                 </div>
               </div>
-              <div>
 
+              <div>
+                <img src='/assets/golden-balloon.png' alt='logo' style={{ width: '40vw' }} />
               </div>
             </div>
 
@@ -218,14 +232,72 @@ function Index() {
             <br />
             <br />
 
-            <div className='minting-rewards'>
-              <h1 className='colorGradient'>Roadmap</h1>
+            <div className='roadmap-container'>
+              <h1 className='colorGradient' style={{fontSize: '90 px'}}>Roadmap</h1>
 
               <br />
               <br />
 
-              <FontAwesomeIcon icon={faSpinner} size='2x' className="spinner" /> 1. Loading
+              <div className='roadmap-header'>
+                1. Launch of the collection
+              </div>
 
+              <br/>
+
+              - social creation: twitter, instagram and discord
+
+              <br/>
+              <br/>
+
+              - large scale marketing campaign
+
+              <br/>
+              <br/>
+
+              - launch of the collection in eth Blockchain
+
+              <br/>
+              <br/>
+
+              - pre-mint (date:__)
+
+              <br/>
+              <br/>
+
+              - public mint (date:__)
+
+              <br />
+              <br />
+              <br />
+              <br />
+
+              <div className='roadmap-header'>
+                2. connection with the community
+              </div>
+
+              <br/>
+
+              - 500 first supporters 
+
+              <br/>
+              <br/>
+
+              - large scale marketing campaign
+
+              <br/>
+              <br/>
+
+              - launch of the collection in eth Blockchain
+
+              <br/>
+              <br/>
+
+              - pre-mint (date:__)
+
+              <br/>
+              <br/>
+
+              - public mint (date:__)
             </div>
 
 
@@ -235,33 +307,33 @@ function Index() {
             <br />
 
             <br />
-        <br />
-        <br />
-        <br />
+            <br />
+            <br />
+            <br />
 
-        <br />
-        <br />
-        <br />
-        <br />
+            <br />
+            <br />
+            <br />
+            <br />
 
-        <br />
-        <br />
-        <br />
-        <br />
+            <br />
+            <br />
+            <br />
+            <br />
 
-        <br />
-        <br />
-        <br />
-        <br />
+            <br />
+            <br />
+            <br />
+            <br />
           </div>
 
-          
+
         </div>
 
-        
 
 
-        <div class="galaxy bottom-right-grid">
+
+        <div className="galaxy bottom-right-grid">
           <img src='/assets/portal.png' className='image-frame' style={{ width: '50vw', height: 'auto' }} />
         </div>
       </div>
