@@ -22,11 +22,11 @@ body {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-size: 818px 600px ;
+  background-size: 100vw 300vh ;
   z-index: -1;
   top: 0;
   left: 0;
-  filter: blur(2px);
+  /*filter: blur(2px);*/
 }
 
 .note {

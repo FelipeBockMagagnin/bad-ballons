@@ -148,12 +148,11 @@ function Index() {
             <br />
             <br />
 
-            <div className='minting-rewards'>
-              <div>
-                <img src='/assets/balloon-hold.png' alt='logo' style={{ width: '40vw' }} />
-              </div>
-              <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                
+            <div className='minting-rewards' style={{ justifyContent: 'end'}}>
+
+
+              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+
 
                 <div style={{ fontSize: '30px' }}>
                   <h1 className='gold'>MINTING REWARDS:</h1>
@@ -163,8 +162,8 @@ function Index() {
 
                   - 1/1 TOKEN REWARD UP TO <div className='colorGradient'>$25K</div> IN ETH
                   <div className='note'>
-                    <div className='gold' style={{fontSize: 25}}>
-                      - (BY MINT ONE OF THE 5 SPECIAL GOLDEN BALLOONS, <br/>GET $5K IN ETH ON YOUR WALLET)
+                    <div className='gold' style={{ fontSize: 25 }}>
+                      - (BY MINT ONE OF THE 5 SPECIAL GOLDEN BALLOONS, <br />GET $5K IN ETH ON YOUR WALLET)
                     </div>
                   </div>
 
@@ -173,12 +172,12 @@ function Index() {
                   - EXCLUSIVE DISCORD GIVEAWAYS EVERY WEEK!
 
                   <br />
-                  <br />
-
-                  - VOTING POWER IN OUR <div className='gold'>DAO</div>
                 </div>
               </div>
-              
+
+              <div>
+                <img src='/assets/golden-balloon.png' alt='logo' style={{ width: '40vw' }} />
+              </div>
             </div>
 
             <br />
@@ -188,10 +187,13 @@ function Index() {
             <br />
 
             <div className='minting-rewards'>
-              <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                
+              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 
-                <div style={{ fontSize: '30px', width: '80%', marginLeft: 'auto' }}>
+                <div>
+                  <img src='/assets/balloon-hold.png' alt='logo' style={{ width: '40vw' }} />
+                </div>
+
+                <div style={{ fontSize: '30px', width: '50%', marginLeft: 'auto', marginRight: 'auto' }}>
                   <h1 className='gold'>HOLDING REWARDS:</h1>
 
                   <br />
@@ -222,9 +224,7 @@ function Index() {
                 </div>
               </div>
 
-              <div>
-                <img src='/assets/golden-balloon.png' alt='logo' style={{ width: '40vw' }} />
-              </div>
+
             </div>
 
             <br />
@@ -232,8 +232,8 @@ function Index() {
             <br />
             <br />
 
-            <div className='roadmap-container'>
-              <h1 className='colorGradient' style={{fontSize: '90 px'}}>Roadmap</h1>
+            <div className='roadmap-container' style={{width: '70%', marginLeft: 'auto', marginRight: 'auto'}}>
+              <h1 className='colorGradient' style={{ fontSize: '90 px' }}>Roadmap</h1>
 
               <br />
               <br />
@@ -242,27 +242,27 @@ function Index() {
                 1. Launch of the collection
               </div>
 
-              <br/>
+              <br />
 
               - social creation: twitter, instagram and discord
 
-              <br/>
-              <br/>
+              <br />
+              <br />
 
               - large scale marketing campaign
 
-              <br/>
-              <br/>
+              <br />
+              <br />
 
               - launch of the collection in eth Blockchain
 
-              <br/>
-              <br/>
+              <br />
+              <br />
 
               - pre-mint (date:__)
 
-              <br/>
-              <br/>
+              <br />
+              <br />
 
               - public mint (date:__)
 
@@ -275,31 +275,96 @@ function Index() {
                 2. connection with the community
               </div>
 
-              <br/>
+              <br />
 
-              - 500 first supporters 
+              - 500 FIRST SUPPORTERS AUTOMATICALLY GET WHITELISTED FOR UPCOMING RELEASES
 
-              <br/>
-              <br/>
 
-              - large scale marketing campaign
+              <br />
+              <br />
 
-              <br/>
-              <br/>
+              - EXCLUSIVE GIVEAWAYS FOR COMMUNITY PARTICIPANTS
 
-              - launch of the collection in eth Blockchain
+              <br />
+              <br />
 
-              <br/>
-              <br/>
+              - (DAO VOTING POWER) WE WILL CREATE A SYSTEM FOR MEMBERS THAT ACQUIRES AN NET HAVE A VOICE IN THE NEXT PROJECT DECISIONS
 
-              - pre-mint (date:__)
+              <br />
+              <br />
+              <br />
+              <br />
 
-              <br/>
-              <br/>
+              <div className='roadmap-header'>
+                3. ALTRUISTIC MOVEMENT
+              </div>
 
-              - public mint (date:__)
+              <br />
+
+              - 10% OF THE TOTAL VALUE OF THE MINT WILL BE USED TO MAKE CHILDREN HAPPY WITH BALLOONS IN HOSPITALS AND ORPHANAGES
+
+
+              <br />
+              <br />
+
+              - WE WILL DOCUMENT EVERYTHING AND PROVE THAT A HAPPY ENVIRONMENT CAN IMPROVE PEOPLE'S LIVES OR EVEN CURE THEIR ILLNESSES!
+
+              <br />
+              <br />
+
+              - PARTNERSHIP WITH OTHER PROJECTS THAT PROMOTE TRANSFORMING THE WORLD INTO A BETTER PLACE THROUGH WEB3.
+
+              <br />
+              <br />
+
+              - EXPANDING TEAM
+
+              <br />
+              <br />
+              <br />
+              <br />
+
+              <div className='roadmap-header'>
+                4. METAVERSE
+              </div>
+
+              <br />
+
+              - 3D AVATAR READY FOR THE METAVERSE 
+              
+              <br />
+              <br />
+
+              - BAD WORLD SPACE TO HANG OUT WITH FRIENDS IN THE METAVERSE
+
+              <br />
+              <br />
+              <br />
+              <br />
+
+              <div className='roadmap-header'>
+                5. BALLOONS BRAND
+              </div>
+
+              <br />
+
+              - LAUNCH OF THE BAD STORE - EXCLUSIVE PRINTS MADE BY OUR ARTISTS
+              
+              <br />
+              <br />
+
+              - KIT GIVEAWAYS FOR HOLDERS
+
+              <br />
+              <br />
+
+              - NFT HOLDERS WILL GET A GREAT DISCOUNT ON PURCHASES
+
+              <br />
+              <br />
+              <br />
+              <br />
             </div>
-
 
             <br />
             <br />
