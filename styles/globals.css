@@ -59,9 +59,37 @@ body {
   .planet img {
     width: 30vw;
   }
+
+  .whitelist {
+    margin-top: -20vh;
+  }
 }
 
 @media (max-width: 652px) {
+  div {
+    font-size: 20px !important;
+  }
+
+  h1 {
+    font-size: 25px !important;
+  }
+
+  button {
+    font-size: 15px !important;
+  }
+
+  .stars {
+    background-size: 100vw 100vh ;
+  }
+
+  .invisible {
+    display: none;
+  }
+
+  .flex-responsive {
+    flex-direction: column;
+  }
+
   .container {
     display: grid; 
     grid-template-columns: auto; 
@@ -400,8 +428,8 @@ ul li ul li a {
     border-left: none;
     display: block;
     padding: 7px 0px;
+    font-size: 15px;
   }
-
 
   .header .button {
     margin-top: 0;

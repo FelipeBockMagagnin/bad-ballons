@@ -38,7 +38,7 @@ function Index() {
           <img src='/assets/balloons.gif' style={{ display: 'inline', width: '75%', height: 'auto', borderRadius: '20px' }} className='image-frame' />
         </div>
 
-        <div className="whitelist top-center-grid" style={{ marginTop: '-20vh' }}>
+        <div className="whitelist top-center-grid">
           <div className="form-container" style={{ width: '80%' }}>
             <div className='content-container' style={{ height: '100%' }}>
               <div style={{ marginTop: 10, textAlign: 'center', fontSize: '2.5vw', color: 'white', textTransform: 'capitalize' }}>
@@ -148,12 +148,8 @@ function Index() {
             <br />
             <br />
 
-            <div className='minting-rewards' style={{ justifyContent: 'end'}}>
-
-
-              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-
-
+            <div className='minting-rewards' style={{ justifyContent: 'end' }}>
+              <div className='flex-responsive' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <div style={{ fontSize: '30px' }}>
                   <h1 className='gold'>MINTING REWARDS:</h1>
 
@@ -173,27 +169,26 @@ function Index() {
 
                   <br />
                 </div>
-              </div>
 
-              <div>
-                <img src='/assets/golden-balloon.png' alt='logo' style={{ width: '40vw' }} />
+                <div>
+                  <img src='/assets/golden-balloon.png' className='invisible' alt='logo' style={{ width: '40vw' }} />
+                </div>
               </div>
             </div>
 
             <br />
             <br />
-
             <br />
             <br />
 
             <div className='minting-rewards'>
-              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <div className='flex-responsive' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 
                 <div>
-                  <img src='/assets/balloon-hold.png' alt='logo' style={{ width: '40vw' }} />
+                  <img className='invisible' src='/assets/balloon-hold.png' alt='logo' style={{ width: '40vw' }} />
                 </div>
 
-                <div style={{ fontSize: '30px', width: '50%', marginLeft: 'auto', marginRight: 'auto' }}>
+                <div style={{ fontSize: '30px', marginLeft: 'auto', marginRight: 'auto' }}>
                   <h1 className='gold'>HOLDING REWARDS:</h1>
 
                   <br />
@@ -232,7 +227,7 @@ function Index() {
             <br />
             <br />
 
-            <div className='roadmap-container' style={{width: '70%', marginLeft: 'auto', marginRight: 'auto'}}>
+            <div className='roadmap-container' style={{ width: '90%', marginLeft: 'auto', marginRight: 'auto' }}>
               <h1 className='colorGradient' style={{ fontSize: '90 px' }}>Roadmap</h1>
 
               <br />
@@ -330,8 +325,8 @@ function Index() {
 
               <br />
 
-              - 3D AVATAR READY FOR THE METAVERSE 
-              
+              - 3D AVATAR READY FOR THE METAVERSE
+
               <br />
               <br />
 
@@ -349,7 +344,7 @@ function Index() {
               <br />
 
               - LAUNCH OF THE BAD STORE - EXCLUSIVE PRINTS MADE BY OUR ARTISTS
-              
+
               <br />
               <br />
 
