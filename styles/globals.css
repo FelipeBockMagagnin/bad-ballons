@@ -12,7 +12,7 @@ body {
   background-color: #000;
   z-index: -2;
   overflow-x: hidden;
-  
+
   position: relative;
 }
 
@@ -22,7 +22,7 @@ body {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-size: 100vw 300vh ;
+  background-size: 100vw 1000vh;
   z-index: -1;
   top: 0;
   left: 0;
@@ -36,18 +36,18 @@ body {
 
 
 .container {
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
-  grid-template-rows: auto auto auto auto; 
-  gap: 0px 0px; 
-  grid-template-areas: 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
     "logo logo logo logo"
     "balloon balloon whitelist whitelist"
     "roadmap roadmap roadmap roadmap"
-    "galaxy galaxy galaxy galaxy"; 
+    "galaxy galaxy galaxy galaxy";
 }
 
-.logo img{
+.logo img {
   max-width: 50vw;
 }
 
@@ -63,9 +63,19 @@ body {
   .whitelist {
     margin-top: -20vh;
   }
+
+  .border-black {
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+  }
 }
 
 @media (max-width: 652px) {
+  div.primary-navigation a {
+    font-size: 10px !important;
+  }
+
   div {
     font-size: 20px !important;
   }
@@ -79,7 +89,7 @@ body {
   }
 
   .stars {
-    background-size: 100vw 100vh ;
+    background-size: 100vw 300vh;
   }
 
   .invisible {
@@ -91,30 +101,30 @@ body {
   }
 
   .container {
-    display: grid; 
-    grid-template-columns: auto; 
+    display: grid;
+    grid-template-columns: auto;
     grid-template-rows: auto;
-    gap: 0px 0px;  
-    grid-template-areas: 
+    gap: 0px 0px;
+    grid-template-areas:
       "logo"
       "balloon"
       "whitelist"
       "roadmap"
-      "galaxy"; 
-    }
+      "galaxy";
+  }
 
-    .planet {
-      display: none !important;
-    }
-    
-    .logo img {
-      width: 90vw !important;
-      max-width: 90vw;
-    }
+  .planet {
+    display: none !important;
+  }
 
-    .whitelist .form-container{
-      width: 90% !important;
-    }
+  .logo img {
+    width: 90vw !important;
+    max-width: 90vw;
+  }
+
+  .whitelist .form-container {
+    width: 90% !important;
+  }
 }
 
 .planet {
@@ -139,27 +149,49 @@ body {
   0% {
     transform: rotate(-45deg);
   }
+
   50% {
     transform: rotate(0);
   }
+
   100% {
-    transform: rotate(-45deg); /* The image width */
+    transform: rotate(-45deg);
+    /* The image width */
   }
 }
 
 
 
 
-.logo { grid-area: logo; z-index: 1000; }
-.planet { grid-area: planet; }
-.balloon { grid-area: balloon; }
-.whitelist { grid-area: whitelist; }
-.roadmap { grid-area: roadmap; }
-.galaxy { grid-area: galaxy; }
+.logo {
+  grid-area: logo;
+  z-index: 1000;
+}
+
+.planet {
+  grid-area: planet;
+}
+
+.balloon {
+  grid-area: balloon;
+}
+
+.whitelist {
+  grid-area: whitelist;
+}
+
+.roadmap {
+  grid-area: roadmap;
+}
+
+.galaxy {
+  grid-area: galaxy;
+}
 
 .balloon .whitelist {
   margin-top: -10vh;
 }
+
 .center-grid {
   display: flex;
   justify-content: center;
@@ -182,9 +214,11 @@ body {
   0% {
     margin-top: 0;
   }
+
   50% {
     margin-top: 50%;
   }
+
   100% {
     margin-top: 0;
   }
@@ -209,7 +243,7 @@ a {
   flex-direction: column;
   text-align: center;
   height: auto;
-  
+
 }
 
 .form-container {
@@ -219,7 +253,7 @@ a {
   border-radius: 20px;
   width: 55vw;
   padding: 20px;
-  margin-bottom: 30px;  
+  margin-bottom: 30px;
   height: 100%;
 }
 
@@ -245,13 +279,13 @@ a {
   display: flex;
 }
 
-.roadmap-container{
+.roadmap-container {
   text-align: center;
   font-size: 30px;
 }
 
 .gold {
-  background: #f1d455;
+  background: #fff459;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   display: inline;
@@ -261,18 +295,23 @@ a {
   0% {
     background-color: red;
   }
+
   20% {
     background-color: yellow;
   }
+
   40% {
     background-color: green;
   }
+
   60% {
     background-color: blue;
   }
+
   80% {
     background-color: purple;
   }
+
   100% {
     background-color: red;
   }
@@ -338,28 +377,33 @@ div.primary-navigation {
   text-align: center;
   font-size: 14px;
 }
+
 div.primary-navigation ul li {
   list-style: none;
   margin: 0 auto;
-  
+
   display: inline-block;
   padding: 0 30px;
   position: relative;
   text-decoration: none;
   text-align: center;
 }
+
 div.primary-navigation li a {
   color: black;
   background-color: #f5342c;
   padding: 5px 12px;
   border-radius: 20px;
 }
+
 div.primary-navigation li a:hover {
   color: white;
 }
+
 div.primary-navigation li:hover {
   cursor: pointer;
 }
+
 div.primary-navigation ul li ul {
   visibility: hidden;
   opacity: 0;
@@ -369,7 +413,8 @@ div.primary-navigation ul li ul {
   display: none;
   background: white;
 }
-div.primary-navigation ul li:hover > ul,
+
+div.primary-navigation ul li:hover>ul,
 div.primary-navigation ul li ul:hover {
   visibility: visible;
   opacity: 1;
@@ -380,6 +425,7 @@ div.primary-navigation ul li ul:hover {
   box-shadow: 0px 3px 5px -1px #ccc;
   z-index: 10000;
 }
+
 div.primary-navigation ul li ul li {
   clear: both;
   width: 100%;
@@ -391,6 +437,7 @@ div.primary-navigation ul li ul li {
 a {
   text-decoration: none;
 }
+
 div.primary-navigation a:hover {
   color: #3CA0E7;
 }
@@ -411,6 +458,8 @@ ul li ul li a {
   flex-wrap: wrap;
 }
 
+
+
 @media (max-width: 652px) {
   div.primary-navigation ul li ul li a:hover {
     padding-left: 10px;
@@ -418,7 +467,7 @@ ul li ul li a {
     transition: all 0.3s ease;
   }
 
-  .filters{
+  .filters {
     flex-direction: column;
   }
 
@@ -444,7 +493,7 @@ ul li ul li a {
     display: none !important;
   }
 
-  
+
 
   .button {
     margin-top: 10px;
@@ -478,9 +527,9 @@ ul li ul li a {
 
   #app {
     height: auto;
-    
+
     justify-content: flex-start;
-  }  
+  }
 }
 
 .scrolling-image-container {
@@ -514,11 +563,13 @@ ul li ul li a {
     0% {
       transform: translate(0);
     }
+
     100% {
-      transform: translate(-3840px); /* The image width */
+      transform: translate(-3840px);
+      /* The image width */
     }
   }
-  
+
 }
 
 @media (min-width: 601px) {
@@ -555,9 +606,11 @@ ul li ul li a {
   color: white;
   min-width: 32px;
 }
+
 #paginate ul li.disabled a {
   color: grey;
 }
+
 #paginate ul li.disable,
 #paginate ul li.disabled a {
   cursor: default;
@@ -589,7 +642,7 @@ ul li ul li a {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -602,7 +655,9 @@ ul li ul li a {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -629,48 +684,51 @@ input[type=number] {
 }
 
 
-.threeD-text { 
-  color: black; 
-  position: relative; 
-  top: -3px; 
+.threeD-text {
+  color: black;
+  position: relative;
+  top: -3px;
   left: -3px;
-  animation: threeD 5s ease infinite; 
-  font-size: 25px;            
+  animation: threeD 5s ease infinite;
+  font-size: 25px;
 }
 
 
 @keyframes threeD {
   0% {
-    text-shadow: 1px 1px green, 
-               2px 2px black, 
-               3px 3px black, 
-               4px 4px black, 
-               5px 5px black, 
-               6px 6px black;
-      }
+    text-shadow: 1px 1px green,
+      2px 2px black,
+      3px 3px black,
+      4px 4px black,
+      5px 5px black,
+      6px 6px black;
+  }
+
   40% {
-    text-shadow: 1px 1px blue, 
-               2px 2px black, 
-               3px 3px black, 
-               4px 4px black, 
-               5px 5px black, 
-               6px 6px black;
+    text-shadow: 1px 1px blue,
+      2px 2px black,
+      3px 3px black,
+      4px 4px black,
+      5px 5px black,
+      6px 6px black;
   }
+
   70% {
-    text-shadow: 1px 1px purple, 
-               2px 2px black, 
-               3px 3px black, 
-               4px 4px black, 
-               5px 5px black, 
-               6px 6px black;
+    text-shadow: 1px 1px purple,
+      2px 2px black,
+      3px 3px black,
+      4px 4px black,
+      5px 5px black,
+      6px 6px black;
   }
+
   100% {
-    text-shadow: 1px 1px green, 
-               2px 2px black, 
-               3px 3px black, 
-               4px 4px black, 
-               5px 5px black, 
-               6px 6px black;
+    text-shadow: 1px 1px green,
+      2px 2px black,
+      3px 3px black,
+      4px 4px black,
+      5px 5px black,
+      6px 6px black;
   }
 }
 
@@ -682,10 +740,12 @@ input[type=number] {
 }
 
 @keyframes spin {
-from {
-  transform: rotate(0deg);
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
-to {
-  transform: rotate(360deg);
-}
-}
+

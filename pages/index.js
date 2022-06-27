@@ -71,13 +71,13 @@ function Index() {
         <div className="roadmap top-center-grid" style={{ color: 'white', marginTop: '100px', fontSize: '20px', textTransform: 'capitalize' }}>
           <div style={{ width: '100%' }}>
             <div>
-              <div className="form-container" style={{ width: '85%', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}>
+              <div className="form-container" style={{ width: '65%', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}>
 
                 <h1 className='colorGradient' style={{ textAlign: 'center' }}>What is the collection for?</h1>
 
                 <div style={{ textAlign: 'left', fontSize: '30px' }}>
                   <br />
-                  - A collection of XXXX unique NFT PFPs with an fresh new and innovative balloon art style
+                  - A collection of <div className='colorGradient'>XXXX</div> unique NFT PFPs with an fresh new and innovative balloon art style
 
                   <br />
                   <br />
@@ -85,7 +85,7 @@ function Index() {
 
                   <br />
                   <br />
-                  - To Create an exclusive community of revolutionaries
+                  - To create a community of revolutionaries and explore people's artistic side. That's important
 
                   <br />
                   <br />
@@ -95,10 +95,15 @@ function Index() {
 
               </div>
 
-              <br />
-              <br />
+              <div style={{ textAlign: 'center', marginTop: '-50px', zIndex: 9999, position: 'relative'}}>
+                <img src='/assets/5_ballons.png' alt='logo' style={{ width: '90vw' }} />
+              </div>
+              
 
-              <div className="form-container" style={{ width: '85%', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}>
+              <br/>
+              <br/>
+
+              <div className="form-container" style={{ width: '65%', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}>
                 <h1 className='colorGradient'>What makes it different from the others?</h1>
 
                 <div style={{ textAlign: 'left', fontSize: '30px' }}>
@@ -124,7 +129,7 @@ function Index() {
               <br />
               <br />
 
-              <div className="form-container" style={{ width: '85%', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}>
+              <div className="form-container" style={{ width: '65%', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}>
                 <h1 className='colorGradient'>What will we do with the money?</h1>
 
                 <div style={{ textAlign: 'left', fontSize: '30px' }}>
@@ -133,13 +138,13 @@ function Index() {
 
                   <br />
                   <br />
-                  <div className='gold'>- 20%</div> goes right back into the project
+                  <div className='gold'>- 30%</div> goes right back into the project
                   <div className='note'>
                     <div className='colorGradient'>-</div> Buying land in the metaverse, expanding the team, marketing money, giveaways, travel money for the winners, etc. . .
                   </div>
 
                   <br />
-                  <div className='gold'>- 70%</div> to the team
+                  <div className='gold'>- 60%</div> to the team
                 </div>
               </div>
 
@@ -199,7 +204,7 @@ function Index() {
                   <br />
                   <br />
 
-                  - <div className='gold'>HOLDERS TRAVELS GIVEAWAYS</div> (3 TRIPS TO ANYWHERE IN THE WORLD ALL PAID FOR)
+                  - <div className='gold'>HOLDERS TRAVEL GIVEAWAYS</div> (Holders Travel Giveaway - with the CEOs to anywhere in the world, all paid for.)
 
                   <br />
                   <br />
