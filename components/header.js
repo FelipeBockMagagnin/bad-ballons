@@ -11,26 +11,13 @@ export default function Header({ wallet, isReady, address, staticPage }) {
                         <ul style={{ padding: 0 }}>
                             <li>
                                 <div className='border-black'>
-                                    <a href="/view">View</a>
+                                    <a onClick={() => {document.getElementById("save-child").scrollIntoView();}}>save a Child</a>
                                 </div>
                             </li>
 
                             <li>
                                 <div className='border-black'>
-                                    <a href="/save-child">save a Child</a>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div className='border-black'>
-                                    <a href="/history">history</a>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div className='border-black'>
-                                    <a href="/roadmap">Roadmap</a>
-
+                                    <a onClick={() => {document.getElementById("roadmap").scrollIntoView();}}>Roadmap</a>
                                 </div>
                             </li>
                         </ul>

@@ -47,9 +47,9 @@ function Index() {
 
               <br />
 
-              <button className='button' style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: 20, width: '50%', height: 70, fontSize: '25px' }}>
-                Whitelist
-              </button>
+              <a href='https://discord.com/invite/YV7ezZsUkV' target='_blank' className='button' style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: 20, width: '50%', height: 70, fontSize: '25px' }}>
+                Join Discord
+              </a>
 
               <div style={{ marginTop: '20px' }}>
                 <a href='https://discord.com/invite/YV7ezZsUkV' className='mr-10' target='_blank' rel="noreferrer">
@@ -232,7 +232,7 @@ function Index() {
             <br />
             <br />
 
-            <div className='roadmap-container' style={{ width: '90%', marginLeft: 'auto', marginRight: 'auto' }}>
+            <div id="roadmap" className='roadmap-container' style={{ width: '90%', marginLeft: 'auto', marginRight: 'auto' }}>
               <h1 className='colorGradient' style={{ fontSize: '90 px' }}>Roadmap</h1>
 
               <br />
@@ -295,7 +295,7 @@ function Index() {
               <br />
               <br />
 
-              <div className='roadmap-header'>
+              <div id='save-child' className='roadmap-header'>
                 3. ALTRUISTIC MOVEMENT
               </div>
 
