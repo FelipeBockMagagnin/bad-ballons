@@ -11,12 +11,6 @@ export default function Header({ wallet, isReady, address, staticPage }) {
                         <ul style={{ padding: 0 }}>
                             <li>
                                 <div className='border-black'>
-                                    <a onClick={() => {document.getElementById("save-child").scrollIntoView();}}>save a Child</a>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div className='border-black'>
                                     <a onClick={() => {document.getElementById("roadmap").scrollIntoView();}}>Roadmap</a>
                                 </div>
                             </li>
@@ -30,10 +24,8 @@ export default function Header({ wallet, isReady, address, staticPage }) {
                 </div>
 
                 {!staticPage && <button className='button' onClick={wallet}>
-                    {isReady ? address?.substring(0, 6) + "..." + address?.substring(address.length - 4, address.length) : "Connect"} { }
+                    {isReady ? address?.substring(0, 6) + "..." + address?.substring(address.length - 4, address.length) : ". . ."} { }
                 </button>}
-
-
             </div>
         </Fragment>
     )

@@ -42,7 +42,7 @@ function Index() {
           <div className="form-container" style={{ width: '80%' }}>
             <div className='content-container' style={{ height: '100%' }}>
               <div style={{ marginTop: 10, textAlign: 'center', fontSize: '2.5vw', color: 'white', textTransform: 'capitalize' }}>
-                A collection of <div className='colorGradient'>XXXX</div> handly maded Ballons stored on the <div className='colorGradient'>Ethereum</div> Blockchain for <div className='colorGradient'>0.XX ETH</div> each.
+                A collection of <div className='colorGradient'>XXXX</div> handly maded Ballons stored on the <div className='colorGradient'>Fantom</div> Blockchain for <div className='colorGradient'>XX FTM</div> each.
               </div>
 
               <br />
@@ -56,12 +56,8 @@ function Index() {
                   <FontAwesomeIcon icon={faDiscord} size='2x' style={{ color: 'white' }} />
                 </a>
 
-                <a href='https://twitter.com/badballoonsNFT' target='_blank' className='mr-10' rel="noreferrer">
+                <a href='https://twitter.com/badballons' target='_blank' className='mr-10' rel="noreferrer">
                   <FontAwesomeIcon icon={faTwitter} size='2x' style={{ color: 'white' }} />
-                </a>
-
-                <a href='https://www.instagram.com/badballoonsnft/' target='_blank' className='mr-10' rel="noreferrer">
-                  <FontAwesomeIcon icon={faInstagram} size='2x' style={{ color: 'white' }} />
                 </a>
               </div>
             </div>
@@ -81,16 +77,7 @@ function Index() {
 
                   <br />
                   <br />
-                  - To save children through the web3
-
-                  <br />
-                  <br />
                   - To create a community of revolutionaries and explore people's artistic side. That's important
-
-                  <br />
-                  <br />
-
-                  - Access to BadVerse, the world of balloons in the metaverse
                 </div>
 
               </div>
@@ -117,36 +104,10 @@ function Index() {
                   <br />
                   <br />
                   - Handmade arts, created from asbolute scratch by our artist <div className='gold'>(since I bet you've identified with a balloon before...)</div>
-
-                  <br />
-                  <br />
-                  - By buying an NFT you are helping many people in need. We’ll be donating 10% of the total amount raised to the <div className='colorGradient'>(DAO choice)</div> foundation
-
                 </div>
 
               </div>
 
-              <br />
-              <br />
-
-              <div className="form-container" style={{ width: '65%', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}>
-                <h1 className='colorGradient'>What will we do with the money?</h1>
-
-                <div style={{ textAlign: 'left', fontSize: '30px' }}>
-                  <br />
-                  <div className='gold'>- 10%</div> goes to donation
-
-                  <br />
-                  <br />
-                  <div className='gold'>- 30%</div> goes right back into the project
-                  <div className='note'>
-                    <div className='colorGradient'>-</div> Buying land in the metaverse, expanding the team, marketing money, giveaways, travel money for the winners, etc. . .
-                  </div>
-
-                  <br />
-                  <div className='gold'>- 60%</div> to the team
-                </div>
-              </div>
 
             </div>
 
@@ -159,20 +120,17 @@ function Index() {
                   <h1 className='gold'>MINTING REWARDS:</h1>
 
                   <br />
-                  <br />
-
-                  - 1/1 TOKEN REWARD UP TO <div className='colorGradient'>$25K</div> IN ETH
-                  <div className='note'>
-                    <div className='gold' style={{ fontSize: 25 }}>
-                      - (BY MINT ONE OF THE 5 SPECIAL GOLDEN BALLOONS, <br />GET $5K IN ETH ON YOUR WALLET)
-                    </div>
-                  </div>
-
-                  <br />
 
                   - EXCLUSIVE DISCORD GIVEAWAYS EVERY WEEK!
 
                   <br />
+                  <br />
+
+                  - FREE MINT PASS FOR FUTURE PROJECTS
+
+                  <br />
+
+
                 </div>
 
                 <div>
@@ -210,16 +168,12 @@ function Index() {
                   <br />
 
                   - (DAO VOTING POWER) WE ARE CREATING A SYSTEM FOR MEMBERS THAT ACQUIRES AN NFT <div className='gold'>HAVE A VOICE</div> IN THE <div>NEXT PROJECT DECISIONS</div>
-
+                  
                   <br />
                   <br />
 
-                  - <div className='gold'>EXCLUSIVE ACCESS</div> TO THE <div className='gold'>BAD STORE</div> WITH DISCOUNTED BALLOONS CUSTOM CHOTHING ITEMS
+                  - GIVEAWAYS
 
-                  <br />
-                  <br />
-
-                  - <div className='gold'>3D NFTS</div> READY FOT METAVERSE
 
                 </div>
               </div>
@@ -244,22 +198,22 @@ function Index() {
 
               <br />
 
-              - social creation: twitter, instagram and discord
+              - social creation: twitter and discord
 
               <br />
               <br />
 
-              - large scale marketing campaign
+              - marketing campaign
 
               <br />
               <br />
 
-              - launch of the collection in eth Blockchain
+              - launch of the collection in FTM Blockchain
 
               <br />
               <br />
 
-              - pre-mint (date:__)
+              - airdrop to Fantom Chess holders (date:__)
 
               <br />
               <br />
@@ -277,8 +231,7 @@ function Index() {
 
               <br />
 
-              - 500 FIRST SUPPORTERS AUTOMATICALLY GET WHITELISTED FOR UPCOMING RELEASES
-
+              - HOLDERS AUTOMATICALLY GET FREE MINT FOR UPCOMING RELEASES
 
               <br />
               <br />
@@ -295,70 +248,9 @@ function Index() {
               <br />
               <br />
 
-              <div id='save-child' className='roadmap-header'>
-                3. ALTRUISTIC MOVEMENT
-              </div>
-
-              <br />
-
-              - 10% OF THE TOTAL VALUE OF THE MINT WILL BE USED TO MAKE CHILDREN HAPPY WITH BALLOONS IN HOSPITALS AND ORPHANAGES
-
-
-              <br />
-              <br />
-
-              - WE WILL DOCUMENT EVERYTHING AND PROVE THAT A HAPPY ENVIRONMENT CAN IMPROVE PEOPLE'S LIVES OR EVEN CURE THEIR ILLNESSES!
-
-              <br />
-              <br />
-
-              - PARTNERSHIP WITH OTHER PROJECTS THAT PROMOTE TRANSFORMING THE WORLD INTO A BETTER PLACE THROUGH WEB3.
-
-              <br />
-              <br />
-
-              - EXPANDING TEAM
-
-              <br />
-              <br />
-              <br />
-              <br />
-
               <div className='roadmap-header'>
-                4. METAVERSE
+                3. MORE SOON...
               </div>
-
-              <br />
-
-              - 3D AVATAR READY FOR THE METAVERSE
-
-              <br />
-              <br />
-
-              - BAD WORLD SPACE TO HANG OUT WITH FRIENDS IN THE METAVERSE
-
-              <br />
-              <br />
-              <br />
-              <br />
-
-              <div className='roadmap-header'>
-                5. BALLOONS BRAND
-              </div>
-
-              <br />
-
-              - LAUNCH OF THE BAD STORE - EXCLUSIVE PRINTS MADE BY OUR ARTISTS
-
-              <br />
-              <br />
-
-              - KIT GIVEAWAYS FOR HOLDERS
-
-              <br />
-              <br />
-
-              - NFT HOLDERS WILL GET A GREAT DISCOUNT ON PURCHASES
 
               <br />
               <br />
